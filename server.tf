@@ -9,7 +9,7 @@ resource "aws_instance" "myawsserver" {
   tags = {
     Name = "Abhishek-DevOps-server"
     env = "Prod"
-    owner = "Abhishek"
+    owner = "Abhishek C"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /tmp/inv"
